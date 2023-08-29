@@ -359,6 +359,10 @@
         </div>
       </div>
     </div>
+    
+    
+    
+    
     <div id="Blog" class="content-section">
       <div class="container">
         <div data-w-id="89b8debd-c9df-6cee-1ed8-129dd8c2d8b2" style="-webkit-transform:translate3d(0, 55PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 55PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 55PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 55PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid blog-grid">
@@ -417,9 +421,122 @@
             </div>
           </div>
         </div>
-        <img src="fonts/5f067b661807eb5efe6fe5c0_Dots%20Pink.svg" alt class="dots-pink">
+      <!--  <img src="fonts/5f067b661807eb5efe6fe5c0_Dots%20Pink.svg" alt class="dots-pink"> -->
       </div>
     </div>
+    
+    
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .faq {
+            border: 1px solid #ddd;
+            margin: 10px;
+            background-color: #ffffff;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: max-height 0.3s ease-out, border-radius 0.3s ease-out;
+        }
+        .faq h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            position: relative;
+        }
+        .faq h2::before {
+            content: "\f078"; /* FontAwesome chevron-down icon */
+            font-family: FontAwesome;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .faq.open h2::before {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .faq p {
+            margin: 5px 0;
+            padding: 0 10px;
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleAnswer(event) {
+            const answer = event.nextElementSibling;
+            const faq = event.parentElement;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                faq.style.maxHeight = '50px';
+                faq.classList.remove('open');
+            } else {
+                answer.style.display = 'block';
+                faq.style.maxHeight = answer.clientHeight + 60 + 'px';
+                faq.classList.add('open');
+            }
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <h1 style="font-size: 2.5rem">Let's answer some FAQ's</h1>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> How do you determine the cost of your services?</h2>
+        <p><span>A:</span> The cost of our services varies depending on factors such as the scope of the project, the complexity of the work, and the specific services you require. We provide personalized quotes after understanding your needs and objectives during our initial consultation. Rest assured, we are committed to offering Competitive pricing while delivering exceptional value and quality.</p>
+    </div>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> What services do you offer at
+
+WebarSolution.in?</h2>
+        <p><span>A:</span> We offer a wide range of services including web design, video editing, SEO optimization, social media Marketing, and more. Our team is dedicated to delivering comprehensive digital solutions tailored to your needs.</p>
+    </div>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> How experienced is your team?</h2>
+        <p><span>A:</span> Our team brings years of collective experience in web design, Multimedia, and digital marketing. We're passionate about staying updated with the latest industry trends to provide you with cutting-edge solutions.</p>
+    </div>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> Can you handle projects of all sizes?</h2>
+        <p><span>A:</span> Yes, we cater to projects of various sizes - from small businesses to large enterprises. Our versatile team is equipped to handle projects with different scopes and complexities.</p>
+    </div>
+        <div class="faq">
+          <h2 onclick="toggleAnswer(this)"><span>Q:</span> How do you ensure the quality of your work?</h2>
+          <p><span>A:</span> Quality is our top priority. We adhere to industry best practices, conduct thorough testing, and seek client feedback throughout the process to ensure the final deliverables Meet and exceed your expectations.</p>
+        </div>
+            <div class="faq">
+              <h2 onclick="toggleAnswer(this)"><span>Q:</span> What is your approach to web design?</h2>
+              <p><span>A:</span> Our web design approach combines creativity and functionality. We focus on user experience, responsive design, and a visually appealing interface to create websites that engage and convert visitors.</p>
+            </div>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> How do you tailor SEO strategies for clients?</h2>
+        <p><span>A:</span> Our SEO strategies are customized based on your business goals and target audience. We conduct thorough keyword research, optimize on-page elements, and implement white-hat techniques to improve your search rankings.</p>
+    </div>
+        <div class="faq">
+        <h2 onclick="toggleAnswer(this)"><span>Q:</span> What sets your video editing services apart?</h2>
+        <p><span>A:</span> Our video editing team crafts compelling visual stories that resonate with your audience. We offer professional editing, seamless transitions, and attention to detail to create videos that leave a lasting impact.</p>
+    </div>
+        <div class="faq">
+          <h2 onclick="toggleAnswer(this)"><span>Q:</span> Can I track the progress of my project?</h2>
+          <p><span>A:</span> Absolutely. We maintain transparent COMMunication throughout the project lifecycle. You'll have access to progress updates, Milestones, and opportunities to provide feedback and suggestions.</p>
+        </div>
+            <div class="faq">
+              <h2 onclick="toggleAnswer(this)"><span>Q:</span> How does social media marketing benefit My business?</h2>
+              <p><span>A:</span> Social Media Marketing enhances your brand's visibility, engagement, and reach. We develop strategic campaigns, manage platforms, and create content that resonates with your audience, ultimately driving traffic and conversions.</p>
+            </div>
+    <!-- Add more FAQs following the same structure -->
+</body>
+</html>
+    
+    
     <div class="footer">
       <div class="container">
         <div class="footer-card">
@@ -459,6 +576,55 @@
         <img src="fonts/5f067b661807eb5ed56fe626_Arrow%20Top.svg" width="12" alt class="scroll-icon">
       </a>
     </div>
+    
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px) rotate(-5deg);
+      }
+      75% {
+        transform: translateX(5px) rotate(5deg);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: green;
+      border-radius: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 9999;
+      animation: shake 1s infinite;
+      animation-delay: 1s;
+    }
+
+    .whatsapp-button img {
+      width: 45px;
+      height: 45px;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://wa.me/+918510062945" target="_blank" class="whatsapp-button">
+    <img src="https://mobirise.com/extensions/chat-button/assets/images/whatspp-1076x1076.png" alt="WhatsApp Logo">
+  </a>
+</body>
+</html>
     <script src="js/IzXGRUvP4jxJ.js" type="text/javascript" crossorigin="anonymous"></script>
     <script src="js/qGm1G6Pyw37y.js" type="text/javascript"></script>
   </body>
